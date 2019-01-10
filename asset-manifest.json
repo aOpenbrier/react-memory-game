@@ -1,14 +1,13 @@
 {
-  "main.css": "/aOpenbrier/react-memory-game.git/static/css/main.196b046f.chunk.css",
-  "main.js": "/aOpenbrier/react-memory-game.git/static/js/main.eae9a71c.chunk.js",
-  "main.js.map": "/aOpenbrier/react-memory-game.git/static/js/main.eae9a71c.chunk.js.map",
-  "static/js/1.82dafdb5.chunk.js": "/aOpenbrier/react-memory-game.git/static/js/1.82dafdb5.chunk.js",
-  "static/js/1.82dafdb5.chunk.js.map": "/aOpenbrier/react-memory-game.git/static/js/1.82dafdb5.chunk.js.map",
-  "runtime~main.js": "/aOpenbrier/react-memory-game.git/static/js/runtime~main.8f91f9e6.js",
-  "runtime~main.js.map": "/aOpenbrier/react-memory-game.git/static/js/runtime~main.8f91f9e6.js.map",
-  "static/media/logo.svg": "/aOpenbrier/react-memory-game.git/static/media/logo.5d5d9eef.svg",
-  "static/css/main.196b046f.chunk.css.map": "/aOpenbrier/react-memory-game.git/static/css/main.196b046f.chunk.css.map",
-  "index.html": "/aOpenbrier/react-memory-game.git/index.html",
-  "precache-manifest.ddfb3d628308f8d6ace6f0999782f37b.js": "/aOpenbrier/react-memory-game.git/precache-manifest.ddfb3d628308f8d6ace6f0999782f37b.js",
-  "service-worker.js": "/aOpenbrier/react-memory-game.git/service-worker.js"
+  "main.css": "/react-memory-game/static/css/main.5d7f8ef0.chunk.css",
+  "main.js": "/react-memory-game/static/js/main.a07acd05.chunk.js",
+  "main.js.map": "/react-memory-game/static/js/main.a07acd05.chunk.js.map",
+  "static/js/1.f73832ad.chunk.js": "/react-memory-game/static/js/1.f73832ad.chunk.js",
+  "static/js/1.f73832ad.chunk.js.map": "/react-memory-game/static/js/1.f73832ad.chunk.js.map",
+  "runtime~main.js": "/react-memory-game/static/js/runtime~main.efc8a0be.js",
+  "runtime~main.js.map": "/react-memory-game/static/js/runtime~main.efc8a0be.js.map",
+  "static/css/main.5d7f8ef0.chunk.css.map": "/react-memory-game/static/css/main.5d7f8ef0.chunk.css.map",
+  "index.html": "/react-memory-game/index.html",
+  "precache-manifest.791480eb4ea2ddb8c3d653978d38f175.js": "/react-memory-game/precache-manifest.791480eb4ea2ddb8c3d653978d38f175.js",
+  "service-worker.js": "/react-memory-game/service-worker.js"
 }
