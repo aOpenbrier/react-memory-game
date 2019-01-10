@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Dinosaurs from './dinosaurs.json'
 import randomize from 'array-random'
 import Info from './Info'
+import GameOver from './GameOver'
+
 const styles = {
     text: {
         color: '#99aa66',
@@ -15,19 +17,19 @@ const styles = {
         flexWrap: 'wrap',
         justifyContent: 'center'
     },
-    card: { 
+    card: {
         backgroundColor: '#ecb651',
         width: '23%',
-        maxHeight: '17vh',
-        margin: '1%', 
+        height: '17vh',
+        margin: '1%',
         borderRadius: '5px',
         padding: '2px',
-        boxSizing: 'border-box' 
+        boxSizing: 'border-box'
     },
-    img: { 
-        maxWidth: '100%', 
-        maxHeight: '80%', 
-        boxSizing: 'border-box' 
+    img: {
+        objectFit: 'contain',
+        height: 'inherit',
+        width: 'inherit'
     }
 }
 
@@ -41,11 +43,19 @@ class Game extends Component {
     }
 
     componentWillMount = () => {
-       this.setState({dinosaurs: randomize(Dinosaurs)})
+        this.setState({ dinosaurs: randomize(Dinosaurs) })
     }
 
+    handleReset = () => {
+        this.setState({
+            isGameOver: false,
+            numClicks: 0,
+            clicked: []
+        })
+
+    }
     handleClick = (dinoName) => {
-        if (!this.state.isGameOver){
+        if (!this.state.isGameOver) {
             if (this.state.clicked.indexOf(dinoName) === -1) {
                 let clickedArr = this.state.clicked
                 let num = this.state.numClicks
@@ -54,26 +64,34 @@ class Game extends Component {
                 this.setState({ dinosaurs: randomize(Dinosaurs), clicked: clickedArr, numClicks: num })
                 console.log(clickedArr)
             }
-        }
-        else {
-            this.setState({isGameOver: true})
-            if (this.state.numClicks > this.state.numBest) {
-                this.setState({numBest: this.state.numClicks})
+            else {
+                this.setState({ isGameOver: true })
+                if (this.state.numClicks > this.state.numBest) {
+                    this.setState({ numBest: this.state.numClicks })
+                }
             }
         }
     }
-    render(){
-        return(
+    render() {
+        return (
             <>
                 <h1 style={styles.text}> Dinosaur Memory Game </h1>
-                <h4 style={styles.text}> {this.state.isGameOver ? 'GAME OVER' : 'Click on each dinosaur without clicking on the same one twice!'}</h4>
+                {this.state.isGameOver ? <GameOver style={styles.text} click={this.handleReset} /> : <h4 style={styles.text}> Don't choose the same one twice!</h4>}
                 <Info style={styles.text} clicks={this.state.numClicks} best={this.state.numBest} />
                 <div style={styles.container}>
-                    {this.state.dinosaurs.map((dinosaur, index) => <div style={styles.card} key={index} onClick={() => this.handleClick(dinosaur.name)}>
-                    <img src={`./assets/images/${dinosaur.image}`} alt={dinosaur.name} style={styles.img} />
-                    <p style={styles.text}>{dinosaur.name}</p> 
-                    </div>
-                    )}
+                    {this.state.dinosaurs.map((dinosaur, index) => {
+                        return <div style={{
+                            background: `#ecb651 url('./assets/images/${dinosaur.image}') bottom center / contain no-repeat`,
+                            overflow: 'hidden',
+                            width: '21%',
+                            height: '17vh',
+                            margin: '1%',
+                            borderRadius: '5px',
+                            padding: '2px',
+                        }} key={index} onClick={() => this.handleClick(dinosaur.name)}>
+                            <p style={styles.text}>{dinosaur.name}</p>
+                        </div>
+                    })}
                 </div>
             </>
         )
