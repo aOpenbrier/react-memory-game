@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Indominus Rex",
+        "image": "indominus-rex.jpg"
+    },
+    {
+        "name": "Ankylosaurus",
+        "image": "ankylosaurus.png"
+    },
+    {
+        "name": "Apatosaurus",
+        "image": "apatosaurus.png"
+    },
+    {
+        "name": "Baryonyx",
+        "image": "baryonyx.png"
+    },
+    {
+        "name": "Velociraptor",
+        "image": "blue.png"
+    },
+    {
+        "name": "Brachiosaurus",
+        "image": "brachiosaurus.png"
+    },
+    {
+        "name": "Carnotaurus",
+        "image": "carnotaurus.png"
+    },
+    {
+        "name": "Gallimimus",
+        "image": "gallimimus.png"
+    },
+    {
+        "name": "Indoraptor",
+        "image": "indoraptor.png"
+    },
+    {
+        "name": "Mosasaurus",
+        "image": "mosasaurus.png"
+    },
+    {
+        "name": "Pachyrhinosaurus",
+        "image": "pachyrhinosaurus.png"
+    },
+    {
+        "name": "Pteranodon",
+        "image": "pteranodon.png"
+    },
+    {
+        "name": "Stegosaurus",
+        "image": "stegosaurus.png"
+    },
+    {
+        "name": "Stygimoloch",
+        "image": "stygimoloch.png"
+    },
+    {
+        "name": "Tyrannosaurus Rex",
+        "image": "trex.png"
+    },
+    {
+        "name": "Triceratops",
+        "image": "triceratops.png"
+    }
+]
