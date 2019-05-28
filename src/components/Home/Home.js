@@ -35,7 +35,7 @@ class Home extends Component {
             <div style={styles.container}>
                 <h1 style={styles.text}>Dinosaur Memory Game</h1>
                 <h3 style={styles.text}>This game will challenge your memory. After choosing a dinosaur the game will shuffle and you have to choose again. Don't click the same dinosaur twice or the game is over.</h3>
-                <Link to='/game'>
+                <Link to={process.env.PUBLIC_URL + '/game'}>
                     <button style={styles.button} >
                     New Game
                     </button>
