@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/react-memory-game/static/css/main.5d7f8ef0.chunk.css"
   },
   {
-    "revision": "3b1f908793b05b7eb377e467f657d715",
+    "revision": "82093181ad11c0da7e1bfde94c3e9af7",
     "url": "/react-memory-game/index.html"
   }
 ];
